@@ -6,13 +6,18 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+    ruby 3.0.1
+
+* Rails Version
+    rails 6.1.0
 
 * System dependencies
 
 * Configuration
 
 * Database creation
-
+    postgresql
+    rails db:create db:migrate
 * Database initialization
 
 * How to run the test suite
