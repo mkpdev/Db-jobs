@@ -6,6 +6,7 @@ class Api::V1::MoviesController < ApplicationController
   end
 
   def create
+    CreateQueueJob.set(priority: 1).perform_later(movie_params)
   end
 
   def movie_params
