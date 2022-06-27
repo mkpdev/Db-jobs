@@ -35,3 +35,6 @@ Things you may want to cover:
                         "title": "xyz"
                     }
                 }
+
+* RUN Testcases
+    ~/rspec
