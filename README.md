@@ -11,19 +11,27 @@ Things you may want to cover:
 * Rails Version
     rails 6.1.0
 
-* System dependencies
-
-* Configuration
-
 * Database creation
     postgresql
     rails db:create db:migrate
-* Database initialization
 
-* How to run the test suite
+* All API required User Authentication
+    create a user it should create auth_token
+    pass auth_token in header
 
-* Services (job queues, cache servers, search engines, etc.)
+    "TOKEN": "auth_token"
 
-* Deployment instructions
+* API's
+    Index list of Queue jobs
+    "GET" -> 'http://localhost:3000/api/v1/queue_jobs'
 
-* ...
+    Create Queue jobs
+    "POST" -> 'http://localhost:3000/api/v1/queue_jobs'
+
+    test_data to_json ->
+                {
+                    "priority": 0,
+                    "movie_option": {
+                        "title": "xyz"
+                    }
+                }
